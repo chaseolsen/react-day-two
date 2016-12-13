@@ -1,6 +1,10 @@
 import React from "react";
 
- export default React.createClass({
+ export default class Child extends React.Component{
+   static defaultProps = {
+     name: "Chase",
+     favoritePokemon: "The Gear one",
+   }
 	render() {
 		return (
 			<div>
@@ -8,4 +12,4 @@ import React from "react";
 			</div>
 		)
 	}
-})
+}
